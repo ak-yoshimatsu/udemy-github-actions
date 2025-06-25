@@ -5,8 +5,20 @@ on:
     branches:
       - main
 
+# ワーキングディレクトリを backend にする
+defaults:
+  run:
+    working-directory: backend
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo hello world
+      # - uses: actions/checkout@v3 # Github上のソースコードを取得
+      # - run: echo hello world
+
+      - name: Current Direcotry
+        run: pwd
+
+      - name: ディレクトリ配下を閲覧
+        run: ls -la
