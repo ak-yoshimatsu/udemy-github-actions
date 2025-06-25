@@ -5,10 +5,10 @@ on:
     branches:
       - main
 
-# ワーキングディレクトリを backend にする
-defaults:
-  run:
-    working-directory: backend
+# # ワーキングディレクトリを backend にする
+# defaults:
+#   run:
+#     working-directory: backend
 
 jobs:
   build:
